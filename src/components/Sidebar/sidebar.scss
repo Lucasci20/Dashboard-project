@@ -1,0 +1,118 @@
+.sidebar {
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #fafafa;
+  border-right: 1px solid #bababa;
+
+  .sidebar-menu {
+    height: 100%;
+    justify-content: center;
+
+    width: 5rem;
+    display: flex;
+    background-color: rgb(137, 214, 187);
+    background: linear-gradient(180deg, #0db2d6 8.12%, #4fda91 71.62%);
+
+    div {
+      margin-top: 10rem;
+      cursor: pointer;
+
+      .icon-menu {
+        font-size: 2rem;
+        clip-path: circle();
+        padding: 2rem;
+        background-color: white;
+        transition: 0.125s;
+      }
+      .icon-menu:hover {
+        background-color: #bababa;
+      }
+    }
+  }
+}
+
+.nav-menu {
+  width: 20rem;
+  top: 0;
+  position: fixed;
+  left: -100%;
+  transition: 0.6s;
+}
+
+.nav-menu.active {
+  left: 0;
+  position: relative;
+  transition: 0.4s;
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.sidebar .icon-close {
+  display: block;
+  margin: 4rem auto;
+  color: black;
+  font-size: 1.6rem;
+}
+
+.nav-text {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #0794b2;
+
+  span {
+    margin-left: 1rem;
+  }
+}
+
+.nav-text a:hover {
+  text-decoration: underline;
+}
+
+.navbar-toggle {
+  position: relative;
+  left: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .sidebar {
+    .sidebar-menu {
+      width: 100%;
+
+      justify-content: start;
+
+      div {
+        transform: translate(100%, -200%);
+
+        .icon-menu {
+          clip-path: none;
+          padding: 1.2rem;
+          border-radius: 10rem;
+        }
+      }
+    }
+    .navbar-toggle {
+      display: none;
+    }
+
+    .nav-menu.active {
+      position: absolute;
+      left: 40%;
+      transform: translate(0, 100%);
+    }
+
+    .nav-text a {
+      color: #fafafa;
+    }
+  }
+}
