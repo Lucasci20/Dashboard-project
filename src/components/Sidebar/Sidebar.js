@@ -26,7 +26,7 @@ export default function Sidebar() {
               </a>
               <div onClick={showSidebar} className="navbar-toggle">
                 <a href="#">
-                  <i className="icon-close"></i>
+                  <i className="icon-chevron-left"></i>
                 </a>
               </div>
             </li>

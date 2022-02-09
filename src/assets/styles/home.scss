@@ -339,7 +339,11 @@
             }
 
             p {
-              margin-left: 5.1rem;
+              margin-left: 6.4rem;
+            }
+
+            .icon-chevron-right {
+              font-size: 1.2rem;
             }
           }
 
@@ -513,17 +517,17 @@
           flex-direction: column;
         }
 
-       .schedule-content {
-         overflow-y: hidden;
-         overflow-x: auto;
-         white-space: nowrap;
+        .schedule-content {
+          overflow-y: hidden;
+          overflow-x: auto;
+          white-space: nowrap;
 
-         .info {
-           .info-content {
-             margin-right: 1rem;
-           }
-         }
-       }
+          .info {
+            .info-content {
+              margin-right: 1rem;
+            }
+          }
+        }
       }
     }
   }

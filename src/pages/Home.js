@@ -1,4 +1,5 @@
 import React from "react";
+
 import EventHistoryChart from "../components/EventHistoryChart";
 import CircleChart from "../components/CircleChart";
 import Sidebar from "../components/Sidebar/Sidebar";
@@ -190,7 +191,7 @@ export default function Home() {
                 </div>
                 <div className="action-plan--buttons">
                   <Button>Pendente</Button>
-
+                    <span className="icon-chevron-right"></span>
                   <Button>Realizado</Button>
                   <p>10:45 10/10/10</p>
                 </div>
