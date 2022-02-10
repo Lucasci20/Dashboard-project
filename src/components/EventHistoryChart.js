@@ -2,7 +2,7 @@ import { useState } from "react";
 import Chart from "react-apexcharts";
 
 const EventHistoryChart = () => {
-  const [options, setOptions] = useState({
+  const [options] = useState({
     chart: {
       id: "apexchart-example",
     },
@@ -11,7 +11,7 @@ const EventHistoryChart = () => {
     },
   });
 
-  const [series, setSeries] = useState([
+  const [series] = useState([
     {
       name: "series-1",
       data: [32, 40, 60, 95, 80, 140, 115, 150],

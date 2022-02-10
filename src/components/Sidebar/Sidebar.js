@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import { useState } from "react";
 
 import "./sidebar.scss";
 import dashboardIcon from "../../assets/icons/dashboard-icon.svg";
@@ -21,11 +21,11 @@ export default function Sidebar() {
           <ul className="nav-menu-items">
             <li className="nav-text">
               <a href="/">
-                <img src={dashboardIcon}></img>
+                <img src={dashboardIcon} alt='ícone'></img>
                 <span>Painel de Controle</span>
               </a>
               <div onClick={showSidebar} className="navbar-toggle">
-                <a href="#">
+                <a href="/">
                   <i className="icon-chevron-left"></i>
                 </a>
               </div>
