@@ -3,8 +3,9 @@
 
   .chart {
     width: 100%;
-    height: 85%;
-    padding-bottom: 1rem;
+    height: 80%;
+    margin-left: 2rem;
+    padding-right: 1rem;
 
     .apexcharts-legend.apx-legend-position-right {
       display: none;
@@ -12,7 +13,7 @@
   }
 
   main {
-    width: 60%;
+    width: 65%;
     margin-left: 3rem;
     margin-right: 3rem;
 
@@ -30,6 +31,7 @@
       padding: 1.3rem;
 
       header {
+        height: 10%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -47,7 +49,6 @@
 
     .event-history {
       height: 26rem;
-
       background-color: #fff;
       border: 0.5px solid #e4e4e4;
       border-radius: 0.5rem;
@@ -60,9 +61,17 @@
         color: #333333;
       }
 
-      > .chart {
-        height: 100%;
+      .label {
+        margin-left: 3rem;
+        font-size: 1.2rem;
+        height: 10%;
+
+        img {
+          width: 1rem;
+          margin-right: .5rem;
+        }
       }
+
     }
 
     .cards {
@@ -90,6 +99,7 @@
         header {
           display: flex;
           justify-content: space-between;
+          height: 10%;
 
           h3 {
             font-size: 1.4rem;
@@ -103,7 +113,43 @@
             color: #b0b0b0;
           }
         }
+        .chart {
+          height: 70%;
+          margin-left: 0;
+          padding-right: 0;
+        }
+
+        .label {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          font-size: 1.2rem;
+          height: 15%;
+  
+          img {
+            width: 1rem;
+            margin-right: .5rem;
+          }
+
+          .time-container {
+            display: flex;
+            justify-content: space-between;
+
+           p {
+             margin-right: 3rem;
+             font-size: 1rem;
+           }
+          }
+        }
+
+        .details {
+          font-size: 1.4rem;
+          margin-top: 1rem;
+        }
       }
+
     }
 
     .schedule {
@@ -233,6 +279,7 @@
         header {
           display: flex;
           justify-content: space-between;
+          height: 10%;
 
           h3 {
             font-size: 1.4rem;
@@ -244,6 +291,14 @@
             font-size: 1.2rem;
             font-weight: 300;
           }
+        }
+
+        .chart {
+          height: 70%;
+
+          margin-left: 0;
+          padding-right: 0;
+          margin-top: 3rem;
         }
       }
     }
@@ -314,6 +369,7 @@
       }
 
       .action-plan--content {
+        height: 80%;
         margin-top: 5rem;
 
         .action-plan {
@@ -490,9 +546,16 @@
         }
 
         .chart {
-          height: 85%;
+          height: 70%;
+          margin-top: 2rem;
+          padding-right: 1rem;
         }
       }
+        .chart {
+          margin-left: 0;
+        }
+
+
     }
   }
 

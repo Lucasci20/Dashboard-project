@@ -9,6 +9,9 @@ import { Select } from "../components/Styled-components/Styled-Select";
 
 import "../assets/styles/home.scss";
 import configIcon from "../assets/icons/Config.svg";
+import greenCircle from "../assets/icons/green-circle.svg";
+import orangeCircle from "../assets/icons/orange-circle.svg";
+import redCircle from "../assets/icons/red-circle.svg";
 
 export default function Home() {
   return (
@@ -40,6 +43,16 @@ export default function Home() {
             <div className="chart">
               <EventHistoryChart />
             </div>
+            <div className="label">
+              <div>
+                <img src={greenCircle}  alt='icon' />
+                <span>Inspeções realizadas</span>
+              </div>
+              <div>
+                <img src={orangeCircle}  alt='icon' />
+                <span>Planos de ação criados</span>
+              </div>
+            </div>
           </section>
 
           <section className="cards">
@@ -56,6 +69,41 @@ export default function Home() {
               <div className="chart">
                 <CircleChart />
               </div>
+              <div className="label">
+                <div className="indicated">
+                  <div>
+                    <img src={greenCircle} alt='icon' />
+                    <span>Realizadas - 58%</span>
+                  </div>
+
+                  <div>
+                    <img src={orangeCircle}  alt='icon' />
+                    <span>Em aberto - 34.9%</span>
+                  </div>
+
+                  <div>
+                    <img src={redCircle}  alt='icon' />
+                    <span>Não Realizadas - 6.5%</span>
+                  </div>
+                </div>
+                <div className="time">
+                  <h4>Média de tempo</h4>
+                  <div className="time-container">
+                    <p>Hoje</p>
+                    <span>10 min</span>
+                  </div>
+
+                  <div className="time-container">
+                    <p>Últimos 7 dias</p>
+                    <span>10 min</span>
+                  </div>
+
+                  <div className="time-container">
+                    <p>Últimos 30 dias</p>
+                    <span>10 min</span>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="action card">
@@ -71,7 +119,42 @@ export default function Home() {
               <div className="chart">
                 <CircleChart />
               </div>
-              <h3>visualizar detalhes</h3>
+              <div className="label">
+                <div className="indicated">
+                  <div>
+                    <img src={greenCircle} />
+                    <span>Realizadas - 58%</span>
+                  </div>
+
+                  <div>
+                    <img src={orangeCircle} />
+                    <span>Em aberto - 34.9%</span>
+                  </div>
+
+                  <div>
+                    <img src={redCircle} />
+                    <span>Não Realizadas - 6.5%</span>
+                  </div>
+                </div>
+                <div className="time">
+                  <h4>Média de tempo</h4>
+                  <div className="time-container">
+                    <p>Hoje</p>
+                    <span>10 min</span>
+                  </div>
+
+                  <div className="time-container">
+                    <p>Últimos 7 dias</p>
+                    <span>10 min</span>
+                  </div>
+
+                  <div className="time-container">
+                    <p>Últimos 30 dias</p>
+                    <span>10 min</span>
+                  </div>
+                </div>
+              </div>
+              <h3 className="details">visualizar detalhes</h3>
             </div>
           </section>
 
@@ -101,7 +184,7 @@ export default function Home() {
                 <p>Emily Araujo Oliveira</p>
                 <p>Nicolas Pereira Sousa</p>
                 <p>Laura Castro Gomes</p>
-               </thead>
+              </thead>
               <div className="info">
                 <div className="info-content">
                   <h4>planejado</h4>
@@ -191,7 +274,7 @@ export default function Home() {
                 </div>
                 <div className="action-plan--buttons">
                   <Button>Pendente</Button>
-                    <span className="icon-chevron-right"></span>
+                  <span className="icon-chevron-right"></span>
                   <Button>Realizado</Button>
                   <p>10:45 10/10/10</p>
                 </div>
