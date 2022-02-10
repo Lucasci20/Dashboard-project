@@ -300,7 +300,8 @@
         .chart {
           height: 70%;
           display: block;
-          overflow: hidden;
+          overflow-y: hidden;
+          overflow-x: auto;
 
           margin-left: 0;
           padding-right: 0;
