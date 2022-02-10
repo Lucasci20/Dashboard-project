@@ -40,11 +40,9 @@ export default function Home() {
                 </span>
               </div>
             </header>
-            <div className="chart-wrapper">
               <div className="chart">
                 <EventHistoryChart />
               </div>
-            </div>
             <div className="label">
               <div>
                 <img src={greenCircle}  alt='icon' />
