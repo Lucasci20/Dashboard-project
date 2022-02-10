@@ -122,17 +122,17 @@ export default function Home() {
               <div className="label">
                 <div className="indicated">
                   <div>
-                    <img src={greenCircle} />
+                    <img src={greenCircle}  alt="icon"/>
                     <span>Realizadas - 58%</span>
                   </div>
 
                   <div>
-                    <img src={orangeCircle} />
+                    <img src={orangeCircle} alt="icon"/>
                     <span>Em aberto - 34.9%</span>
                   </div>
 
                   <div>
-                    <img src={redCircle} />
+                    <img src={redCircle} alt='icon' />
                     <span>Não Realizadas - 6.5%</span>
                   </div>
                 </div>
