@@ -25,9 +25,9 @@ export default function Sidebar() {
                 <span>Painel de Controle</span>
               </a>
               <div onClick={showSidebar} className="navbar-toggle">
-                <a href="/">
+                <span>
                   <i className="icon-chevron-left"></i>
-                </a>
+                </span>
               </div>
             </li>
           </ul>
