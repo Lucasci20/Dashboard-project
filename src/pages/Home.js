@@ -22,7 +22,6 @@ export default function Home() {
           <header className="header">
             <h2>Painel de Controle</h2>
           </header>
-
           <section className="content event-history">
             <header>
               <h3>Histórico de eventos</h3>
@@ -40,21 +39,21 @@ export default function Home() {
                 </span>
               </div>
             </header>
-              <div className="chart">
-                <EventHistoryChart />
-              </div>
+            <div className="chart">
+              <EventHistoryChart />
+            </div>
             <div className="label">
               <div>
-                <img src={greenCircle}  alt='icon' />
+                <img src={greenCircle} alt="icon" />
                 <span>Inspeções realizadas</span>
               </div>
               <div>
-                <img src={orangeCircle}  alt='icon' />
+                <img src={orangeCircle} alt="icon" />
                 <span>Planos de ação criados</span>
               </div>
             </div>
           </section>
-
+          
           <section className="cards">
             <div className="inspection card">
               <header>
@@ -72,17 +71,17 @@ export default function Home() {
               <div className="label">
                 <div className="indicated">
                   <div>
-                    <img src={greenCircle} alt='icon' />
+                    <img src={greenCircle} alt="icon" />
                     <span>Realizadas - 58%</span>
                   </div>
 
                   <div>
-                    <img src={orangeCircle}  alt='icon' />
+                    <img src={orangeCircle} alt="icon" />
                     <span>Em aberto - 34.9%</span>
                   </div>
 
                   <div>
-                    <img src={redCircle}  alt='icon' />
+                    <img src={redCircle} alt="icon" />
                     <span>Não Realizadas - 6.5%</span>
                   </div>
                 </div>
@@ -122,17 +121,17 @@ export default function Home() {
               <div className="label">
                 <div className="indicated">
                   <div>
-                    <img src={greenCircle}  alt="icon"/>
+                    <img src={greenCircle} alt="icon" />
                     <span>Realizadas - 58%</span>
                   </div>
 
                   <div>
-                    <img src={orangeCircle} alt="icon"/>
+                    <img src={orangeCircle} alt="icon" />
                     <span>Em aberto - 34.9%</span>
                   </div>
 
                   <div>
-                    <img src={redCircle} alt='icon' />
+                    <img src={redCircle} alt="icon" />
                     <span>Não Realizadas - 6.5%</span>
                   </div>
                 </div>
@@ -157,7 +156,6 @@ export default function Home() {
               <h3 className="details">visualizar detalhes</h3>
             </div>
           </section>
-
           <section className="schedule">
             <header className="schedule-header">
               <h3>Inspeções agendadas</h3>
